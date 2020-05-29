@@ -1,0 +1,15 @@
+    return (None, None)
+def findMinAndMax(L):
+    if not L:
+        return (None, None)
+    else:
+        max = L[0]
+        min = L[0]
+        for i in L:
+            if i > max:
+                max=i
+        for j in L:
+            if j < min:
+                min=j
+        return (min,max)
+findMinAndMax([])
